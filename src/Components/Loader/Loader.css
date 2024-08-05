@@ -1,0 +1,92 @@
+:root {
+  --navbar: #171414; /* Dark shade for navbar */
+  --main1: #FF9933; /* Saffron (Indian flag color) */
+  --main2: #FFFFFF; /* White (Indian flag color) */
+  --primary: #138808; /* Green (Indian flag color) */
+  --secondary: #F5F5F5; /* Light gray for secondary elements */
+  --ternary: #3DCFD3; /* Accent color */
+  --hover: #FF9933; /* Saffron for hover effects */
+  --bg-light: #ffffff; /* White background for light mode */
+  --bg-dark: #000000; /* Black background for dark mode */
+}
+
+/* ----- Preloader Styling ----- */
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-light); /* Default to light mode */
+  transition: opacity 0.5s ease-out; /* Smooth fade-out transition */
+  opacity: 1;
+}
+
+.loader.bg-dark {
+  background: var(--bg-dark); /* Dark mode background */
+}
+
+.loader.bg-light {
+  background: var(--bg-light); /* Light mode background */
+}
+
+.ring {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  border: 0px solid var(--main1);
+  border-radius: 50%;
+}
+
+.ring:nth-child(1) {
+  border-bottom-width: 1rem;
+  border-color: var(--primary);
+  animation: rotate1 2s linear infinite;
+}
+
+.ring:nth-child(2) {
+  border-right-width: 1rem;
+  border-color: var(--hover);
+  animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3) {
+  border-top-width: 1rem;
+  border-color: var(--ternary);
+  animation: rotate3 2s linear infinite;
+}
+
+.loading {
+  color: var(--secondary);
+  font-size: 25px;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}

@@ -1,0 +1,35 @@
+/* Existing styles for the certificate */
+.certificate {
+    transition: 0.5s;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 50px #2af5e874;
+}
+/* Styles for the modal and image */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: #000000cc; /* Dimmed background */
+    z-index: 50;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px #0000001a;
+    /* No padding needed */
+}
+
+.modal-image {
+    max-width: 90vw; /* Adjust as needed */
+    max-height: 90vh; /* Adjust as needed */
+    margin: 2rem; /* Adjust margin as needed */
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+}

@@ -1,0 +1,166 @@
+/* animations.css
+@keyframes bg-fill-left-to-right {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .fill-left-to-right {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, var(--tw-bg-opacity) 50%, var(--tw-bg-opacity) 50%);
+    transition: background-position 0.5s;
+  }
+  
+  .fill-left-to-right:hover {
+    background-position: 100% 0;
+  } */
+  
+
+  /* Gradient color for Footer Text navbar logo */
+/* styles.css */
+.gradient-text {
+  background: linear-gradient(45deg, #ff9f46ec, #ff00c8);
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text; /* Standard property for other browsers */
+  -webkit-text-fill-color: transparent; /* For WebKit browsers */
+  color: transparent; /* Fallback for non-WebKit browsers */
+}
+
+
+/* THIS IS  */
+
+/* Left-to-Right Animation */
+@keyframes bg-fill-left-to-right {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.fill-left-to-right {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, #53ff14dc 50%);
+  transition: background-position 0.5s;
+}
+
+.fill-left-to-right:hover {
+  background-position: 100% 0;
+}
+
+.dark .fill-left-to-right {
+  background-image: linear-gradient(to right, transparent 50%, #47be92 50%);
+}
+
+/* Right-to-Left Animation */
+@keyframes bg-fill-right-to-left {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.fill-right-to-left {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to left, 
+    transparent 50%, 
+    #ff2e89e2 50%, 
+    #ff926a 0%, /* Orange color */
+    #ff358c 100% /* Pink color */
+);
+  transition: background-position 0.5s;
+}
+
+.fill-right-to-left:hover {
+  background-position: -100% 0;
+}
+
+.dark .fill-right-to-left {
+  background-image: linear-gradient(to left, transparent 50%, #0000ff 50%);
+}
+
+/* Circle In Animation */
+@keyframes circle-in {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+.circle-in {
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 0.5s;
+}
+
+.circle-in:hover {
+  clip-path: circle(150% at 50% 50%);
+}
+
+/* Circle Out Animation */
+@keyframes circle-out {
+  0% {
+    clip-path: circle(150% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(0% at 50% 50%);
+  }
+}
+
+.circle-out {
+  clip-path: circle(150% at 50% 50%);
+  transition: clip-path 0.5s;
+}
+
+.circle-out:hover {
+  clip-path: circle(0% at 50% 50%);
+}
+  
+
+
+
+/* Navbar */
+
+/* Left-to-Right Animation */
+@keyframes bg-fill-left-to-right-nav {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.fill-left-to-right-nav {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, #fffd8b 50%);
+  transition: background-position 0.5s;
+}
+
+.fill-left-to-right-nav:hover {
+  background-position: 100% 0;
+}
+
+.dark .fill-left-to-right-nav {
+  background-image: linear-gradient(to right, transparent 50%, #000000 50%);
+}
+
+.navbar-wrapper {
+  box-shadow: 0 0.2px 2px #beb2b2;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Adjusted shadow on scroll */
+.navbar-wrapper.scrolled {
+  box-shadow: 0 4px 8px #e1e1e1; 
+}
+
+
+
