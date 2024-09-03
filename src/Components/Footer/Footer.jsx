@@ -149,11 +149,11 @@ const Footer = ({ darkMode }) => {
                 value={message}
                 onChange={handleMessageChange}
               ></textarea>
-              <ReCAPTCHA
+           {/*  <ReCAPTCHA
                 sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
                 onChange={handleCaptchaChange}
                 className="mb-4"
-              />
+              /> */}
               <button
                 type="submit"
                 className="w-24 h-10 rounded-lg border-[1px] outline-none border-green-800 bg-slate-600 text-xl shadow-md hover:bg-slate-700 text-red-600 dark:text-slate-100 hover:text-white dark:hover:text-blue-600 transition duration-300"

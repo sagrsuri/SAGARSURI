@@ -2,11 +2,11 @@ import image_project from '../../assets/project.jpg'
 
 const projectsData = [
     {
-      title: 'SAGARSURI.IN',
+      title: 'Current Website',
       image: image_project,
       // video: '',
       // thumbnail: image_project,
-      demoLink: 'https://sagarsuri.in/',
+      demoLink: '/',
       githubLink: 'https://github.com/SagrSuri/sagarsuri',
       technologies: ['React.js','TailwindCSS' , 'CSS'],
     },
